@@ -12,4 +12,10 @@ public class AccountService {
     public Object userRegister(Account account){
         return accountRepository.save(account);
     }
+    public Account findAccountByUsername(String username){
+        return accountRepository.findAccountByUsername(username);
+    }
+    public Account findAccountById(String id){
+        return accountRepository.findAccountById(id);
+    }
 }
